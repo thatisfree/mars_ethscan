@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="shortcut icon" href="favicon.png"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>MARS checker</title>
+	<link href="src/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div>
+		<h1 class="header">Marschecker</h1>
+		<div class="box">
+			<form id="ethForm">
+				<label for="addr">Token Address</label>
+				<input id="token" autocomplete="off" value="0xc3D2B3e23855001508e460A6dbE9f9e3116201aF" disabled>
+				<label for="addresses">Ethereum Addresses</label>
+				<textarea id="addresses" autocomplete="off" placeholder="Enter Ethereum addresses separated by new lines"></textarea>
+				<label for="addresses">Ethescan Api Key</label>
+				<input type="text" id="apiKey" autocomplete="off" placeholder="Enter Your Etherscan Api Key">
+				<button type="submit">Check Balances</button>
+			</form>
+			<div id="results"></div>
+		</div>
+	</div>
+	<script src="src/js/base.js"></script>
+</body>
+</html>
